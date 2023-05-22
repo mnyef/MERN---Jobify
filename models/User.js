@@ -12,28 +12,29 @@ const UserSchema = new mongoose.Schema({
   email: {
     type: String,
     required: [true, 'Please provide email'],
-    unique: true,
     validate: {
       validator: validator.isEmail,
       message: 'Please provide a valid email',
     },
+    unique: true,
   },
   password: {
     type: String,
     required: [true, 'Please provide password'],
     minlength: 6,
+    select: false,
   },
   lastName: {
     type: String,
-    maxlength: 20,
     trim: true,
-    default: 'LastName',
+    maxlength: 20,
+    default: 'lastName',
   },
   location: {
     type: String,
-    maxlength: 20,
     trim: true,
-    default: 'My city',
+    maxlength: 20,
+    default: 'my city',
   },
 });
 
