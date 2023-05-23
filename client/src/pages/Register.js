@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Logo, FormRow, Alert } from '../components';
 import Wrapper from '../assets/wrappers/RegisterPage';
 import { useAppContext } from '../context/appContext';
@@ -14,7 +14,7 @@ const Register = () => {
   const [values, setValues] = useState(initialState);
   // global state and useNavigate
 
-  const { isLoading, showAlert, displayAlert } = useAppContext();
+  const { showAlert, displayAlert } = useAppContext();
 
   const toggleMember = () => {
     setValues({ ...values, isMember: !values.isMember });
