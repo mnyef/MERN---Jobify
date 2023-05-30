@@ -55,3 +55,6 @@ export const EDIT_JOB_ERROR = 'EDIT_JOB_ERROR';
 // Show Stats
 export const SHOW_STATS_BEGIN = 'SHOW_STATS_BEGIN';
 export const SHOW_STATS_SUCCESS = 'SHOW_STATS_SUCCESS';
+
+// Clear Filters
+export const CLEAR_FILTERS = 'CLEAR_FILTERS';

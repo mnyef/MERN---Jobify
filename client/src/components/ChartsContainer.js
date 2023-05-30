@@ -12,7 +12,7 @@ export default function ChartsContainer() {
     <Wrapper>
       <h4>Monthly Applications</h4>
       <button type='button' onClick={() => setBarChart(!barChart)}>
-        {barChart ? 'AreaChart' : 'BarChart'}
+        {barChart ? 'Area Chart' : 'Bar Chart'}
       </button>
       {barChart ? <BarChart data={data} /> : <AreaChart data={data} />}
     </Wrapper>
