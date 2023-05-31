@@ -62,3 +62,7 @@ export const CLEAR_FILTERS = 'CLEAR_FILTERS';
 
 // Change Page
 export const CHANGE_PAGE = 'CHANGE_PAGE';
+
+// Get Current User
+export const GET_CURRENT_USER_BEGIN = 'GET_CURRENT_USER_BEGIN';
+export const GET_CURRENT_USER_SUCCESS = 'GET_CURRENT_USER_SUCCESS';
